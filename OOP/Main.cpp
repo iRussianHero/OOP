@@ -1,18 +1,16 @@
 ﻿#include <iostream>
 #include <string>
 
+#include "Teacher.h"
+
 using namespace std;
-
-struct Teacher
-{
-	string firstName;
-	string lastName;
-	string subject;
-};
-
 
 int main()
 {
+	setlocale(LC_ALL, "Rus");
+
+	Teacher teacher;
+
 
 	return 0;
 }
