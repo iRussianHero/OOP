@@ -1,25 +1,32 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 using namespace std;
+
+
 
 struct Person
 {
 	string firstName;
 	string lastName;
 	int age;
+	Date dataOfBirth;
 	double height;
 }; 
 
+
+
 void printPerson(Person person)
 {
-	cout << "=== Èíôîðìàöèÿ î ÷åëîâåêå ===" << endl;
-	cout << "Èìÿ:\t" << person.firstName << endl;
-	cout << "Ôàìèëèÿ:\t" << person.lastName << endl;
-	cout << "Âîçðàñò:\t" << person.age << endl;
-	cout << "Ðîñò:\t" << person.height << endl;
+	cout << "=== Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ñ‡ÐµÐ»Ð¾Ð²ÐµÐºÐµ ===" << endl;
+	cout << "Ð˜Ð¼Ñ:\t" << person.firstName << endl;
+	cout << "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ:\t" << person.lastName << endl;
+	cout << "Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚:\t" << person.age << endl;
+	PrintDate(person.dataOfBirth);
+	cout << "Ð Ð¾ÑÑ‚:\t" << person.height << endl;
 	cout << "=============================" << endl;
 }
+
 int main()
 {
 	Person person_1, person_2;
